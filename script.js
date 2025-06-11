@@ -4,14 +4,26 @@ const yesButton = document.getElementById('yes');
 const noButton = document.getElementById('no');
 // Get the ID of 'no' -_-
 
-const backButton = document.getElementById('back');
-// Get the ID of 'back' ^o^
+// Get the IDs of back buttons !
+const backButtonThank = document.getElementById('backButtonThank'); // NEW ID
+const backButtonConsequence = document.getElementById('backButtonConsequence'); // NEW ID
+
 
 yesButton.onclick = redirectPage; // Clicking on yesButton will activate the redirectPage function !
 
 noButton.onclick = consequencesInitialize; // Your actions will have consequences . . .
 
-backButton.onclick = goBack; // Go back to the main page;
+// Attach the goBack function to back buttons :P
+if (backButtonThank) { // Good practice to check if element exists
+    backButtonThank.onclick = goBack;
+}
+if (backButtonConsequence) { // Good practice to check if element exists
+    backButtonConsequence.onclick = goBack;
+}
+
+/* The purpose of the line of code above is to 
+redirect you to the main page >o< */
+
 
 function redirectPage() { // The redirectPage function . . .
   let page1 = document.getElementById('teacutscene1');
@@ -30,24 +42,10 @@ function consequencesInitialize() {
   let page1 = document.getElementById('teacutscene1');
   page1.style.display = "none"; 
   
-  let page2 = document.getElementById('consequence');
+  let page2 = document.getElementById('consequence'); // This was 'page2', should be 'consequence' ID
   page2.style.display = "block";  
 }
 
 /* The purpose of the function above is to teach
 you a lesson about accepting tea requests. */
 
-
-function goBack() { // The goBack function . . .
-  let page1 = document.getElementById('teacutscene1');
-  page1.style.display = "block"; 
-  
-  let page2 = document.getElementById('teacutscene2');
-  page2.style.display = "none";
-
-  let page3 = document.getElementById('consequence');
-  page3.style.display = "none";
-}
-
-/* The purpose of the function above is to 
-redirect you to the main page >o< */
