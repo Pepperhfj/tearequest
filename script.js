@@ -20,7 +20,7 @@ function redirectPage() { // The redirectPage function . . .
 redirect you to another part of the page without 
 making multiple files and sites ! */
 
-function consequencesInitialize() {
+function consequencesInitialize() { // The consequencesInitialize function . . .
   let page1 = document.getElementById('teacutscene1');
   page1.style.display = "none"; 
   
