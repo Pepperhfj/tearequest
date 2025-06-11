@@ -21,9 +21,6 @@ if (backButtonConsequence) { // Good practice to check if element exists
     backButtonConsequence.onclick = goBack;
 }
 
-/* The purpose of the line of code above is to 
-redirect you to the main page >o< */
-
 
 function redirectPage() { // The redirectPage function . . .
   let page1 = document.getElementById('teacutscene1');
@@ -49,3 +46,17 @@ function consequencesInitialize() {
 /* The purpose of the function above is to teach
 you a lesson about accepting tea requests. */
 
+
+function goBack() { // The goBack function . . .
+  let page1 = document.getElementById('teacutscene1');
+  page1.style.display = "block"; 
+  
+  let page2 = document.getElementById('teacutscene2');
+  page2.style.display = "none";
+
+  let page3 = document.getElementById('consequence');
+  page3.style.display = "none";
+}
+
+/* The purpose of the function above is to 
+redirect you to the main page >o< */
