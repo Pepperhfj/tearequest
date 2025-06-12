@@ -22,6 +22,7 @@ if (backButtonConsequence) { // Good practice to check if element exists
 }
 
 
+
 function redirectPage() { // The redirectPage function . . .
   let page1 = document.getElementById('teacutscene1');
   page1.style.display = "none"; 
