@@ -5,7 +5,7 @@ const noButton = document.getElementById('no');
 // Get the ID of 'no' -_-
 
 // Get the IDs of back buttons !
-const backButtonThank = document.getElementById('backButtonThank'); // NEW ID
+const backButtonThank = document.getElementById('backButtonCutscene2'); // NEW ID
 const backButtonConsequence = document.getElementById('backButtonConsequence'); // NEW ID
 
 
@@ -20,7 +20,6 @@ if (backButtonThank) { // Good practice to check if element exists
 if (backButtonConsequence) { // Good practice to check if element exists
     backButtonConsequence.onclick = goBack;
 }
-
 
 
 function redirectPage() { // The redirectPage function . . .
