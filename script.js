@@ -5,7 +5,7 @@ const noButton = document.getElementById('no');
 // Get the ID of 'no' -_-
 
 // Get the IDs of back buttons !
-const backButtonThank = document.getElementById('backButtonCutscene2'); // NEW ID
+const backButtonTea2 = document.getElementById('backButtonCutscene2'); // NEW ID
 const backButtonConsequence = document.getElementById('backButtonConsequence'); // NEW ID
 
 
@@ -14,8 +14,8 @@ yesButton.onclick = redirectPage; // Clicking on yesButton will activate the red
 noButton.onclick = consequencesInitialize; // Your actions will have consequences . . .
 
 // Attach the goBack function to back buttons :P
-if (backButtonThank) { // Good practice to check if element exists
-    backButtonThank.onclick = goBack;
+if (backButtonTea2) { // Good practice to check if element exists
+    backButtonTea2.onclick = goBack;
 }
 if (backButtonConsequence) { // Good practice to check if element exists
     backButtonConsequence.onclick = goBack;
